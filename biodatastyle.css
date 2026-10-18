@@ -1,0 +1,118 @@
+.biodata {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.biodata h1 {
+  margin-bottom: 1.5rem;
+}
+
+.biodata h2 {
+  margin-bottom: 0.75rem;
+}
+
+.biodata section {
+  margin-bottom: 2.5rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.profile-info p {
+  max-width: 65ch;
+  margin-bottom: 0.75rem;
+}
+
+.info-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-list dt {
+  font-weight: bold;
+}
+
+.hobby-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hobby-columns h3 {
+  margin-bottom: 0.5rem;
+}
+
+.hobby-columns ol,
+.hobby-columns ul {
+  padding-left: 1.25rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+th,
+td {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #c5d3d1;
+  text-align: left;
+}
+
+th {
+  background-color: #19044b;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eef4f3;
+}
+
+@media (min-width: 768px) {
+  .profile {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .profile-photo {
+    flex: 0 0 200px;
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .hobby-columns {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}

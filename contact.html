@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me Roynaldy Siregar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Roynaldy Siregar</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biodata.html">Biodata</a></li>
+          <li><a href="myHoliday.html">My Holiday</a></li>
+          <li><a href="contact.html" class="active">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact">
+    <h1>Contact Me</h1>
+    <p class="contact-intro">Jika ada yang mau di sampaikan dan mau berhubung dengan saya, bisa hubungi saya dengan kontak kontak saya.</p>
+
+    <div class="contact-layout">
+      <section class="contact-form-area">
+        <h2>Kirim Pesan</h2>
+        <form action="mailto:2582026@unai.edu" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="fullname">Nama lengkap</label>
+            <input type="text" id="fullname" name="fullname" minlength="3" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" minlength="3" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="6" minlength="10" required></textarea>
+          </div>
+          <button class="button" type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section class="contact-info">
+        <h2>Kontak Langsung</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:2582026@unai.edu">2582026@unai.edu</a>
+          </li>
+          <li>
+            <span class="contact-label">Instagram</span>
+            <a href="https://www.instagram.com/royysgr/" target="_blank" rel="noopener">@royysgr</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/roy-2582026" target="_blank" rel="noopener">github.com/roy-2582026</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Roynaldy Chandra Siregar. NIM 2582026.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
